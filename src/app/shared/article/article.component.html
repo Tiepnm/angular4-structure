@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-5 col-lg-4 left-col">
+    <div class="search-hotel-tab">
+      <div class="nav-tab">
+        <a class="index1" [ngStyle]="{'border-right': active === 'transers' ? '1px solid #000' : '1px solid #939597' }"
+           [ngClass]="{'active': active === 'hotels'}" (click)="changeTab('hotels')">
+          HOTELS
+        </a>
+        <a class="index2" [ngStyle]="{'border-right': active === 'hotels' ? '1px solid #000' : '1px solid #939597' }"
+           [ngClass]="{'active': active === 'activities'}" (click)="changeTab('activities')">
+          ACTIVITIES
+        </a>
+        <a class="index3"
+           [ngStyle]="{'border-right': active === 'transers' ? '1px solid #ee2f42' : '1px solid #939597' }"
+           [ngClass]="{'active': active === 'transers'}" (click)="changeTab('transers')">
+          TRANSFERS
+        </a>
+      </div>
+      <div class="content">
+        <div [hidden]="active != 'hotels'"> HOTELS</div>
+        <div [hidden]="active != 'activities'"> ACTIVITIES</div>
+        <div [hidden]="active != 'transers'"> TRANSFERS</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7 col-lg-8">
+    <div class="row">
+      <div class="col-md-7 middle-col">
+        <a href="/res/rrfl/RR_OMC_IncentiveFlyer_P2_A4.pdf" target="_blank">
+          <img class="rr-icon d-inline-block icon-calendar" src="/assets/img/RR_WebBanner_D2.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-5 right-col">
+         abc
+      </div>
+    </div>
+  </div>
+</div>
+
+

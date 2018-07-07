@@ -1,0 +1,77 @@
+.search-hotel-tab {
+
+}
+
+.nav-tab {
+  font-family: AvenirBlack;
+  a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: gray;
+    color: #ffffff;
+    position: relative;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    border-right: 1px solid gray;
+    &.active {
+      background-color: red;
+    }
+    &.index1 {
+      z-index: 3;
+    }
+    &.index2 {
+      z-index: 2;
+      margin-left: -10px;
+    }
+    &.index3 {
+      z-index: 1;
+      margin-left: -10px;
+    }
+  }
+}
+right-col {
+  padding-left: 15px;
+  .title-search-existing-booking {
+    font-family: AvenirBlack;
+    font-size: 14px;
+    color: black;
+    margin-top: 9px;
+  }
+  .search-frame {
+    padding-right: 80px;
+    .go-search {
+      width: 100%;
+      height: 40px;
+      background-color: white;
+      border: solid 1px black;
+      font-size: 12px;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 8px;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        font-size: 8px;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        font-size: 8px;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        font-size: 8px;
+      }
+    }
+    .btn-go {
+      width: 65px;
+      height: 40px;
+      font-size: 20px;
+      background-color: red;
+      font-family: "Arial Black";
+    }
+    .go-advanced{
+      display: inline-block;
+      cursor: pointer;
+      margin-top: 10px;
+      color: gray;
+    }
+  }
+}

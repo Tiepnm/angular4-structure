@@ -1,0 +1,23 @@
+import {Component, OnInit} from '@angular/core';
+
+@Component({
+  selector: 'app-article',
+  templateUrl: './article.component.html',
+  styleUrls: ['./article.component.scss']
+})
+export class ArticleComponent implements OnInit {
+  active: string;
+
+  constructor() {
+    this.active = 'hotels';
+  }
+
+  ngOnInit() {
+  }
+
+  changeTab(active) {
+    this.active = active;
+
+  }
+
+}
